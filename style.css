@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap');
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playpen Sans', cursive;
+}
+   
+body {
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    padding: 1em;   
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 1em;
+}
+
+#search-input {
+    width: 60%;
+    max-width: 400px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    outline: 0;
+}
+
+#search-button {
+    padding: 10px 20px;
+    background-color: #138065;
+    color: #FFF;
+    border: none;
+    font-size: 16px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.search-results {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3em 2em;
+}
+
+.search-result {
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.search-result img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: opacity .2s ease-in-out;
+}
+
+.search-result:hover img {
+    opacity: .8;
+}
+
+.search-result a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+#show-more-button {
+    background-color: #008CBA;
+    font-size: 18px;
+    border: none;
+    color: #FFF;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    margin: 0 auto 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
